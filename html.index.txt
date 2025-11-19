@@ -1,0 +1,79 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fx Ash Trading Analyzer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Fx Ash Trading Analyzer</h1>
+  </header>
+
+  <main>
+    <section id="controls">
+      <label for="synthetic-select">Select Market:</label>
+      <select id="synthetic-select">
+        <option value="R_10">R_10</option>
+        <option value="R_10_1s">R_10_1s</option>
+        <option value="R_25">R_25</option>
+        <option value="R_25_1s">R_25_1s</option>
+        <option value="R_50">R_50</option>
+        <option value="R_50_1s">R_50_1s</option>
+        <option value="R_75">R_75</option>
+        <option value="R_75_1s">R_75_1s</option>
+        <option value="R_100">R_100</option>
+        <option value="R_100_1s">R_100_1s</option>
+      </select>
+
+      <label for="tick-sequence">Tick Sequence:</label>
+      <select id="tick-sequence">
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+      </select>
+
+      <button id="start-btn">Start Analysis</button>
+      <button id="stop-btn">Stop Analysis</button>
+    </section>
+
+    <section id="market-data">
+      <h2>Market Data</h2>
+      <p id="last-digit">Last Digit: -- (Price: --)</p>
+      <p id="entry">Entry: --</p>
+    </section>
+
+    <section id="circles-container">
+      <div class="circle" data-digit="0">0<br><span class="percent">0%</span></div>
+      <div class="circle" data-digit="1">1<br><span class="percent">0%</span></div>
+      <div class="circle" data-digit="2">2<br><span class="percent">0%</span></div>
+      <div class="circle" data-digit="3">3<br><span class="percent">0%</span></div>
+      <div class="circle" data-digit="4">4<br><span class="percent">0%</span></div>
+      <div class="circle" data-digit="5">5<br><span class="percent">0%</span></div>
+      <div class="circle" data-digit="6">6<br><span class="percent">0%</span></div>
+      <div class="circle" data-digit="7">7<br><span class="percent">0%</span></div>
+      <div class="circle" data-digit="8">8<br><span class="percent">0%</span></div>
+      <div class="circle" data-digit="9">9<br><span class="percent">0%</span></div>
+    </section>
+
+    <section id="probabilities">
+      <div id="over-box">Over: 0%</div>
+      <div id="under-box">Under: 0%</div>
+    </section>
+
+    <section id="history">
+      <h2>History</h2>
+      <p id="history-data">--</p>
+    </section>
+
+    <footer>
+      <p>Fx Ash Strategy</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

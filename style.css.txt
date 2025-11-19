@@ -1,0 +1,88 @@
+body {
+  background-color: #0b0b0b;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #111;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.8rem;
+  color: #00ffea;
+}
+
+main {
+  padding: 1rem;
+}
+
+#controls {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#market-data {
+  margin-bottom: 1rem;
+}
+
+#circles-container {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.2rem;
+  text-align: center;
+  border: 2px solid #444;
+  position: relative;
+}
+
+.circle.selected {
+  background-color: #007bff;
+}
+
+.circle .percent {
+  font-size: 0.7rem;
+  color: #0f0;
+}
+
+#probabilities {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+#over-box {
+  background-color: #0a0;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+#under-box {
+  background-color: #a00;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  color: #555;
+}
